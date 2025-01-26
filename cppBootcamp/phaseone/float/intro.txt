@@ -1,0 +1,5 @@
+float data types
+
+float
+double
+long double

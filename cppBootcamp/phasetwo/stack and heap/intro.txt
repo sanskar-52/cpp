@@ -1,0 +1,6 @@
+stack memory = fastest memory you will get 
+               has predefined size
+
+
+heap = predefined but can grow
+       not the fastest               

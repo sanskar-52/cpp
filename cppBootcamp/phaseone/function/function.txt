@@ -1,0 +1,10 @@
+int afunction(){
+    //code of function is here
+    //function is defined as int so return int
+    return 0;
+}
+
+void fire(){
+    puts("this fires a bullet");
+    //does'nt need to return any value
+}

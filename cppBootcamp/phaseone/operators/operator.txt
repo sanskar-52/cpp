@@ -1,0 +1,11 @@
+and &&
+or ||
+
+(42 > 12 && 97 > 53 )  this is true
+(42 > 12 && 7 > 53 )  this is flase
+
+(42 > 12 || 7 > 53 )  this is true
+
+use of != 
+
+bit wise operator and logical operator

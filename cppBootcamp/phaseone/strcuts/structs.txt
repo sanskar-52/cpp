@@ -1,0 +1,3 @@
+strcutures you can even define bit of syntax of methods as well 
+
+classes?

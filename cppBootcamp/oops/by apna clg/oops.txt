@@ -1,0 +1,81 @@
+pillars of oops
+
+1. encapsulation
+2. abstraction
+3. inheritance
+4. polymorphism
+
+encapsulation = wrapping up of data & member function in a single unit called class.
+
+constructor = special method invoked at the time of object creation. used for initialisation 
+-same name as class
+-no return type
+-only called once at object creation
+-memory allocation happens when constructor is called
+
+types of constructor
+1.non-parameterized constructor
+2.parameterized-constructor
+3.copy constructor
+
+constructor overloading is an example of polymorphism.
+this -> pointer.object ki properties ko access karne ke liye this pointer ko use kar sakte hai.
+this pointer automatically create hone waala pointer hai jo calling object ko point karta hai.
+this->property = (*this).property = obj.property //given this is a pointer which points to the object that called this pointer.
+
+shallow copy and deep copy;
+defualt copy constructor shallow copy banate hai;
+issue tab aate hai jab "DYNAMIC memory allocation" hota h
+deep copy me pointer ko new jagah point kar denge thats it.
+
+
+DESTRUCTOR
+destructor has same name as class.
+automatically called when main function going to end.
+memory leak
+
+
+inheritance
+when properties and member function of base class are passed on the derived class.
+used for code reusability..
+constructor bhi copy ho jayega from base class to derived class.
+declaring constructor.
+
+while declaring object of derived class , parent class constructor is called first and then derived class constructor.
+
+and main function khtm hone par DESTRUCTOR of child class is called first and then of parent class.
+
+multi level inheritance = parent -> parent -> child
+Multiple inheritance  =    parent ->  child   <- parent   (properties and member function passed to derived class from multiple parent class)
+
+Hierarchial inheritance = multiple derived class from single parent class.
+
+THIRD PILLAR OF OOP= polymorphism;
+polymorphism is the ability of objects to take on different forms or behave in different ways depending on the context in which they are used.
+constructor overloading, function overloading, operator overloading.
+
+RUN TIME POLYMORPHISM
+function overriding 
+parent and derived class contain same function with different implementation.
+the parent class function is said to be overriden.
+derived class ka object banate hai to derived class ka function call hota hai,
+parent class ka object banate hai to parent class ka function call hota hai.
+VIRTUAL FUNCTION.
+a virtual function is a member function that you expect to be redefined in derived class.
+virtual function are dynamic in nature.
+defined by the word "virtual" inside a base class and are always declared with a base class and overriden in a derived class.
+a virtual function is called during runtime.
+
+by FRIEND'ing a derived class in parent class can allow derived class to access private member of parent class.
+
+ABSTRACTION
+hiding all unnecessary details and showing only the important parts.
+access modifiers
+ABSTRACT class
+=abstract classes are used to provide a base class from which other classes can be derived.
+=they can not be instantiated and are meant to be inherited.
+=abstract class are typically used to define an interface for derived classes.
+
+static keyword
+
+a function can be defined outside of class ie,           class::function(parameters){code}

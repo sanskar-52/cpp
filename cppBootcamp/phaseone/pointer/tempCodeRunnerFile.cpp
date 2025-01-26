@@ -1,0 +1,1 @@
+ std::cout << "2." << myp << " and " << *myp <<endl;

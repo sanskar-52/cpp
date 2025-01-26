@@ -1,0 +1,17 @@
+linker is something that comes between the process when you execute your code
+and your code compiles and gives you executable binary
+
+https://stackoverflow.com/questions/9248533/how-does-a-linker-know-what-all-libraries-to-link
+https://stackoverflow.com/questions/3322911/what-do-linkers-do
+
+#qualifiers
+
+modification qualifiers
+    const
+    volatile
+    mutable
+life duration qualifiers
+    static
+    register = suggestion to compiler to store the information to register(hardware level code)
+    extern
+    auto = (default keyword for lifetime)
