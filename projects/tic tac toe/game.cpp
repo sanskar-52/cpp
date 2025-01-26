@@ -88,7 +88,7 @@ bool checkdraw(){
 }
 
 int main(){
-    cout << "zero 2" << "chaning something locally and then pusing it" << endl; 
+    cout << "zero 2" << "chaning something locally and then pushing it" << endl; 
     cout << "welcome to tic tac toe" << endl;
     //ye game 2 players ke bich me hai X and O to loop me daalna hoga taaki alternatively move input le ek baar x se phir o se while checking condition for draw and win?/
     while(true){
