@@ -1,3 +1,0 @@
-oops already completed
-last topic were friend ,virtual function, static keyword.
-after oops i am going to start smart pointers - 21.01.2025

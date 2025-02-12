@@ -1,0 +1,24 @@
+smart pointers
+there are many types of smart pointer and the first one is being-
+1.unique pointer frees up the memory as soon as the scope ends.
+scope is usually deifned by {}
+you can not copy unique pointer. matlab sirf ek unique pointer hi point kar sakta hai memory ke taraf
+we have a seperate pointer which is allowed to be copyed
+
+unique pointer kya fix karta hai?
+new ke baad delete karne ki jarurat nahi hai apne aap delete ho jayega scope khtm hone par
+uniqe pointer ko delete karne ke baad usko access nahi kar sakte //it becomes null pointer, preventing accidental access.
+ek location ko ek hi unique pointer point karega
+
+int* ptr = new int(5);
+int* another_ptr = ptr;
+delete another_ptr; 
+// Now ptr points to invalid memory!   unique pointer moves the ownership cannot copy.
+
+shared pointer 
+//when all the shared pointer done with their job then memory will be freed up.
+
+weak pointer
+weak pointer ko koi nahi puchta
+ie nobody is keeping track of weak pointer
+only allowed to keep refernce // weak_pointer<user> = ptr1;      ptr1 is another shared pointer. 

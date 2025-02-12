@@ -1,4 +1,0 @@
-smart pointers
-1.unique pointer frees up the memory as soon as the scope ends.
-scope is usually deifned by {}
-you can not copy unique pointer. matlab sirf ek unique pointer hi point kar sakta hai memory ke taraf
