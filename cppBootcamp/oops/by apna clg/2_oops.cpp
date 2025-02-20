@@ -13,6 +13,7 @@ public:
     // }
     
     Student(string name,double cgpa){
+        //this is a constructor
         this->name = name;
         Cgpa_ptr = new double;
         *(this->Cgpa_ptr) = cgpa;

@@ -61,7 +61,7 @@ int main(){
     cout << t1.name << endl;
     cout << t1.dept << endl;
 
-    //t1.khazana = "9383635127";
+    // t1.khazana = "9383635127";
     t1.set_Salary(12323);
     //salary to set kardi hamne magar ab print kaise karenge?
     t1.print_salary();
@@ -74,7 +74,7 @@ int main(){
 
 
     Teacher t3(t2); //custom copy constructor
-    cout << "old name of t3" <<t3.name << endl;
+    cout << "old name of t3 is " <<t3.name << endl;
     t3.name = "sudhesh";
     cout << "new name of t3 is " << t3.name << endl;
     cout << "name of t2 " << t2.name << endl;

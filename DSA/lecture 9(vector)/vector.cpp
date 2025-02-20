@@ -10,7 +10,7 @@ int main(){
     vector<int> vec = {1,2,3};
     cout << "value of vector vec[0] is :"<< vec[0] <<endl;
 
-    vector <int> seco(12,81);
+    vector <int> seco(12,81); //in seco vector there will be 12 elements and each element is 81;
     //for each loop
     //type of iterator should be same as the type of data which is stored in vector
     for(int value : seco){

@@ -21,7 +21,7 @@ types of constructor
 constructor overloading is an example of polymorphism.
 this -> pointer.object ki properties ko access karne ke liye this pointer ko use kar sakte hai.
 this pointer automatically create hone waala pointer hai jo calling object ko point karta hai.
-this->property = (*this).property = obj.property //given this is a pointer which points to the object that called this pointer.
+this->property = (*this).property = obj.property //this is a pointer which points to the object that called this pointer.
 
 shallow copy and deep copy;
 defualt copy constructor shallow copy banate hai;
