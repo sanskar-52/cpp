@@ -1,0 +1,10 @@
+so unordered_map has better time complexity most of the time in storing and fetching ie O(1) 
+but some times the worst time complexity of unordered_map is O(n) ie bad
+so first priority should be to implement unordered_map then ordered_map
+the time complexity for ordered_map is O(log n) which is better than O(n)
+
+so when does worst time complexity occurs in unordered_map?
+due to collision .division method
+
+key can be anything a pair<int,int> as well, any data structure can be key in a map
+in unordered_map only individual data-type can be key

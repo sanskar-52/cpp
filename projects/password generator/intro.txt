@@ -1,0 +1,29 @@
+Password generator - Flow
+Let us think about how would we build this project.
+
+We know the following rules - the password generator should take the following as user inputs
+
+Length of the password.
+The 1st character should necessarily be an alphabet
+Are numeric characters / numbers required in the password?
+Are special characters required in the password?
+Let us use the following flow
+
+User input
+Accept user input for Length of the password as an integer (length N)
+Accept user input for 'use_special_chars' as 'Yes / No'
+Accept user input for 'use_numbers' as 'Yes / No'
+
+Password construction
+Create a random password of length (N−2)
+consisting only alphabets. Remember that the 1st character of the password should necessarily be an alphabet
+
+If 'use_numbers' is 'Yes', then concatenate any random number at the end. 
+If it is 'No', then concatenate any random alphabet at the end. Now the password string has length (N−1).
+
+If 'use_special_chars' is 'Yes', then concatenate any random special character at the end.
+If it is 'No', then concatenate any random alphabet at the end. Now the password string has length N.
+
+Once the password has been constructed - output the same for the user
+Note that the above is just one of the options.
+You can also choose alternate methods to ensure that the password meets the 3 conditions given above - for e.g. - the 2nd character of the password can be a number. Similarly - the number can have more than 1 number or special character.

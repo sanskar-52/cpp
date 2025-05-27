@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <typeinfo>  //have to include this for typeid to work
+
 using namespace std;
 
 string api_call(){
@@ -11,13 +13,18 @@ int another_api_call(){
 }
 
 int main() {
+
     auto response = api_call();
+
     cout << "API CALL VALUE: " << response;
-    if (typeid(string) == typeid(response)) {
+    if (typeid(response) == typeid(string)) {
         puts("type of both id is same\n");
     }
 
+
+
     auto rep = another_api_call();
+
     cout << "another api call vall value " << rep << endl;
     if (typeid(rep) == typeid(int)) {
         puts("type of both id is int\n");
