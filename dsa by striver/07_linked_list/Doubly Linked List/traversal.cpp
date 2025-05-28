@@ -67,8 +67,9 @@ int main(){
 
     PrintForward(head);
 
+    cout << endl;
 
-
-
+    PrintBackward(tail);
+    
     return 0;
 }
