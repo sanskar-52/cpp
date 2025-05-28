@@ -19,10 +19,35 @@ void DeletionAtK(Node*& head,int k){
     if( k<=0 || head == nullptr){
         cout << "invalid deletion" <<endl;
         return;
-    }   
-    if(k==1){
-        
     }
+
+    Node* temp = head;
+    if(k==1){
+        if(head->next != nullptr){
+        head->next->prev = nullptr;
+        }
+        head = head->next;
+        delete temp;
+    }
+
+    for(int i = 1; i < k && temp != nullptr; i++){
+        temp = temp->next;
+    }
+
+    if(temp == nullptr){
+        cout << "out of bounds" << endl;
+        return;
+    }
+
+    if(temp->prev != nullptr){
+        temp->prev->next = temp->next;
+    }
+
+    if(temp->next != nullptr){
+        temp->next->prev = temp->prev;
+    }
+    delete temp;
+
 }
 
 int main(){
