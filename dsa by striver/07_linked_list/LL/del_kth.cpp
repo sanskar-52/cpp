@@ -24,12 +24,9 @@ Node* del_k(Node *head,int k){
         counter = counter->next;
     }
     if(k==1){
-        if(head->next == nullptr) return nullptr;
-        else{
-            Node* temp= head;
-            head = head->next;
-            delete temp;
-        }
+        Node* temp= head;
+        head = head->next;
+        delete temp;
         return head;
     }
     else if(k==cnt){

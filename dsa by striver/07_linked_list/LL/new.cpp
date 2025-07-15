@@ -18,8 +18,15 @@ public:
 };
 
 int main(){
-    vector<int> arr = {111,21,3,1231,2};
-
-    Node head = Node(arr[0],nullptr);
-
+  vector<int> arr = {111,21,3,1231,2};
+  vector<int> arr2 = arr;
+  arr.pop_back();
+  for(int x: arr){
+    cout << x << " ";
+  }
+  for(int x: arr2){
+    cout << x << " ";
+  }
+  int are[5] = {1,2,3,4,5};
+  // int arr2[5] = are;
 }

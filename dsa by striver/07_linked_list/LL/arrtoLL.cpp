@@ -28,7 +28,7 @@ Node* arr2LL(vector<int> &arr){
     return head;
 }
 
-int lenode(Node* head){
+int len_node(Node* head){
     Node* walker = head;
     int cnt = 0;
     while(walker != nullptr){
@@ -49,7 +49,7 @@ int main(){
         walker = walker->next;
     }
 
-    int length = lenode(head);
+    int length = len_node(head);
     cout << endl << "length of linked_list is " << length;
     return 0;
 }
