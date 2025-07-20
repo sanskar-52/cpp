@@ -17,6 +17,7 @@ public:
 };
 
 Node* segregate(Node* head){
-  Node* temp = head;
+  Node* odd = head;
+  while(){}
   
 }
