@@ -17,6 +17,7 @@ void pre_order (Node* root) {
   if (root == nullptr) return;
 
   cout << root->data;
+  
   pre_order(root->left);
   pre_order(root->right);
 }
