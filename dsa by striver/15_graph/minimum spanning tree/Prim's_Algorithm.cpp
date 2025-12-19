@@ -67,8 +67,8 @@ public:
     int sum = 0;
     while (!pq.empty())
     {
-      int node = pq.top().second;
       int wt = pq.top().first;
+      int node = pq.top().second;
       pq.pop();
 
       if (vis[node])
