@@ -1,0 +1,13 @@
+There is no issue , do it in any language. They are just data structures.
+
+Only difference is the syntax and some methods which each languages have.
+
+No it won't be enough and my advice is not to go for hundreds for videos. You won't be able to finish it like that.
+
+Refere to a sheet, learn topicwise, search, solve, and if solving on leetcode the various solutions and explanation from the solutions tab will help you a lot more than watching hubdreds of videos.
+
+You will get to see many approaches there and my recommendation is to start giving contests on codechef and then shift to codeforces once you have a grip and done with advanced topics.
+
+Till then learn and grind on Leetcode, Geeksforgeeks.
+
+Don't wait like first I will finish whole dsa and then start solving, learn solve, explore, find, solve doubts, search, refer, repeat

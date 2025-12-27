@@ -16,7 +16,7 @@ class Solution
 public:
   vector<int> nearestSmallerELement(vector<int> nums)
   {
-    // trying to maintain a montonic stack in a decreasing order
+    // trying to maintain a montonic stack in a increasing order
     stack<int> st;
     int n = nums.size();
     vector<int> res(n);
