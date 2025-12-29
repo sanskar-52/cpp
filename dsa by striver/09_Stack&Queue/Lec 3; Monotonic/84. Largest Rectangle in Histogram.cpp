@@ -65,3 +65,40 @@ public:
     return largestArea;
   }
 };
+
+// now we will try to find pse as well as nse as we traverse the heights and as soon as we get nse we will calculate it's area
+// and max it
+
+class Solution
+{
+public:
+  int largestRectangleArea(vector<int> &heights)
+  {
+    int n = heights.size();
+    stack<int> st;
+    // vector<int> nse(n);
+    vector<int> pse(n);
+    int maxArea = 0;
+    for (int i = 0; i < n; i++)
+    {
+      while (!st.empty() && heights[st.top()] >= heights[i])
+      {
+        // nse[st.top()] = i;
+        maxArea = max((i - pse[st.top()] - 1) * heights[st.top()], maxArea);
+        st.pop();
+      }
+
+      pse[i] = st.empty() ? -1 : st.top();
+      st.push(i);
+    }
+
+    while (!st.empty())
+    {
+      // nse[st.top()] = n;
+      maxArea = max((n - pse[st.top()] - 1) * heights[st.top()], maxArea);
+      st.pop();
+    }
+
+    return maxArea;
+  }
+};
