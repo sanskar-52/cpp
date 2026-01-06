@@ -5,4 +5,3 @@ each node is connected to another node
 each node consist of data which it stores and the address of the next node
 head pointer points toward the starting node
 tail pointer points to last node
-hrh
