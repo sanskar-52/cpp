@@ -6,7 +6,7 @@ This ensures that the tree remains approximately balanced, preventing worst-case
 
 #include <stdio.h>
 #include <bits/stdc++.h>
-
+using namespace std;
 struct TreeNode
 {
   int data;
@@ -25,4 +25,23 @@ struct TreeNode
 
 int height(TreeNode *root)
 {
+  if (root == nullptr)
+    return 0;
+  int lh = height(root->left);
+  if (lh == -1)
+  {
+    return -1;
+  }
+  int rh = height(root->right);
+  if (rh == -1)
+  {
+    return -1;
+  }
+
+  if (abs(lh - rh) > 1)
+  {
+    return -1;
+  }
+
+  return 1 + std::max(lh, rh);
 }

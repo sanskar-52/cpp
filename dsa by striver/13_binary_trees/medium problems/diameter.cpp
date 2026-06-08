@@ -16,8 +16,9 @@
 //   - right_height
 //   - possible_diameter = left_height + right_height
 // The maximum of these across all nodes gives the final diameter.
-
+#include <bits/stdc++.h>
 #include "../TreeNode.h"
+using namespace std;
 
 int diameter = 0;
 int height(TreeNode *root)
@@ -45,3 +46,40 @@ int height(TreeNode *root)
  * @param root Pointer to the root node of the binary tree.
  * @return The height of the tree rooted at 'root'.
  */
+
+// now the bruteforce solution
+// we will make a global variable and at each node we will lh + rh and max() the global variable.
+
+class Solution
+{
+public:
+  int height(TreeNode *root)
+  {
+    if (root == nullptr)
+      return 0;
+
+    int lh = height(root->left);
+    int rh = height(root->right);
+
+    return 1 + max(lh, rh);
+  }
+
+  int diameter(TreeNode *root)
+  {
+    if (root == nullptr)
+      return 0;
+
+    int lh = height(root->left);
+    int rh = height(root->right);
+
+    int currD = lh + rh;
+
+    int leftD = diameter(root->left);
+    int rightD = diameter(root->right);
+
+    return max(currD, max(leftD, rightD));
+  }
+};
+
+// TC = O(N^2)
+// SC = O(H)  due to recursion stack.
